@@ -17,7 +17,7 @@ Built using **.NET 8** and **N-Tier Architecture** to ensure high maintainabilit
 ---
 
 ## 🧱 Project Structure
-
+**
 WordCountAPI/
 │
 ├── Controllers/
@@ -34,7 +34,7 @@ WordCountAPI/
 ├── Utilities/
 │ └── WordParser.cs
 │
-├── Program.cs
+├── Program.cs**
 
 
 ---
