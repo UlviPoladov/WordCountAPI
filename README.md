@@ -17,24 +17,25 @@ Built using **.NET 8** and **N-Tier Architecture** to ensure high maintainabilit
 ---
 
 ## 🧱 Project Structure
-**
+
+```
 WordCountAPI/
-│
 ├── Controllers/
-│ └── WordCountController.cs
+│   └── WordCountController.cs
 │
 ├── Services/
-│ ├── IWordCountService.cs
-│ └── WordCountService.cs
+│   ├── IWordCountService.cs
+│   └── WordCountService.cs
 │
 ├── Models/
-│ ├── WordCountResult.cs
-│ └── WordCountRequest.cs
+│   ├── WordCountResult.cs
+│   └── WordCountRequest.cs
 │
 ├── Utilities/
-│ └── WordParser.cs
+│   └── WordParser.cs
 │
-├── Program.cs**
+└── Program.cs
+```
 
 
 ---
