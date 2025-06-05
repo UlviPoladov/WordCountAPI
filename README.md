@@ -10,7 +10,7 @@ Built using **.NET 8** and **N-Tier Architecture** to ensure high maintainabilit
 
 - Upload `.txt` files via `POST /api/wordcount`
 - Count all **alphanumeric words** (case-insensitive)
-- Return results sorted **by frequency (desc)**
+- Return results sorted **by frequency (descending)**
 - Handles file validation and common error cases
 - Fully compatible with **.NET 8 minimal hosting model**
 
@@ -37,12 +37,12 @@ WordCountAPI/
 └── Program.cs
 ```
 
-
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - Visual Studio 2022+, Rider, or VS Code
 
@@ -51,27 +51,27 @@ WordCountAPI/
 ```bash
 dotnet build
 dotnet run
+```
 
+Open in your browser:
 
-Open in browser:
+```
 https://localhost:{PORT}/swagger
+```
 
 ---
 
----
 ## 📮 API Endpoint
-POST /api/wordcount
-Method: POST
 
-Content-Type: multipart/form-data
+### `POST /api/wordcount`
 
-Form Field: file (Only .txt files allowed)
+- **Method:** POST  
+- **Content-Type:** `multipart/form-data`  
+- **Form Field:** `file` (Only `.txt` files allowed)
 
----
+### ✅ Example Response
 
----
-## ✅ Example Response
-
+```json
 [
   {
     "word": "lorem",
@@ -86,63 +86,55 @@ Form Field: file (Only .txt files allowed)
     "count": 4
   }
 ]
+```
 
 ---
 
----
-🔍 Word Processing Rules
-✅ Only .txt files are accepted
+## 🔍 Word Processing Rules
 
-✅ Words are case-insensitive
-
-✅ Only alphanumeric characters (a-z, A-Z, 0-9)
-
-✅ Words are separated by whitespace
-
-✅ Punctuation is ignored
+- ✅ Only `.txt` files are accepted
+- ✅ Words are **case-insensitive**
+- ✅ Only **alphanumeric characters** (a–z, A–Z, 0–9)
+- ✅ Words are separated by **whitespace**
+- ✅ Punctuation is ignored
 
 ---
 
----
-⚠️ Error Handling
-| Scenario               | Error Message                   |
-| ---------------------- | ------------------------------- |
-| No file uploaded       | `No file uploaded.`             |
-| Empty file             | `File is empty or null.`        |
-| Invalid file extension | `Only .txt files are allowed.`  |
-| Internal server error  | `An unexpected error occurred.` |
----
+## ⚠️ Error Handling
 
----
-🧪 Manual Test Cases Covered
-Mixed case handling (Word, word, WORD)
-
-Repeated words counted correctly
-
-Punctuation and special characters ignored
-
-Large files tested
-
-Empty file / missing file tested
----
-
-
----
-🛠️ Tech Stack
-ASP.NET Core 8 Web API
-
-N-Tier Architecture (Controller, Service, Utility, Model)
-
-Regex-based word parsing
-
-Dependency Injection
+| Scenario                      | Error Message                      |
+|-------------------------------|------------------------------------|
+| No file uploaded              | `No file uploaded.`                |
+| Empty file                    | `File is empty or null.`           |
+| Invalid file extension        | `Only .txt files are allowed.`     |
+| Internal server error         | `An unexpected error occurred.`    |
 
 ---
 
----
-👤 Author
-Ulvi Poladov
+## 🧪 Manual Test Cases Covered
+
+- Mixed case handling (`Word`, `word`, `WORD`)
+- Repeated words counted correctly
+- Punctuation and special characters ignored
+- Large `.txt` files tested
+- Empty file / missing file tested
 
 ---
 
-Swagger (OpenAPI)
+## 🛠️ Tech Stack
+
+- ASP.NET Core 8 Web API
+- N-Tier Architecture (Controller, Service, Utility, Model)
+- Regex-based word parsing
+- Dependency Injection
+- Swagger (OpenAPI)
+
+---
+
+## 👤 Author
+
+**Ulvi Poladov**
+
+---
+
+
