@@ -59,7 +59,7 @@ https://localhost:{PORT}/swagger
 ---
 
 ---
-📮 API Endpoint
+## 📮 API Endpoint
 POST /api/wordcount
 Method: POST
 
@@ -70,7 +70,7 @@ Form Field: file (Only .txt files allowed)
 ---
 
 ---
-✅ Example Response
+## ✅ Example Response
 
 [
   {
