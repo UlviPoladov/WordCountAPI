@@ -56,7 +56,9 @@ dotnet run
 Open in browser:
 https://localhost:{PORT}/swagger
 
+---
 
+---
 📮 API Endpoint
 POST /api/wordcount
 Method: POST
@@ -65,6 +67,9 @@ Content-Type: multipart/form-data
 
 Form Field: file (Only .txt files allowed)
 
+---
+
+---
 ✅ Example Response
 
 [
@@ -82,7 +87,9 @@ Form Field: file (Only .txt files allowed)
   }
 ]
 
+---
 
+---
 🔍 Word Processing Rules
 ✅ Only .txt files are accepted
 
@@ -94,7 +101,9 @@ Form Field: file (Only .txt files allowed)
 
 ✅ Punctuation is ignored
 
+---
 
+---
 ⚠️ Error Handling
 | Scenario               | Error Message                   |
 | ---------------------- | ------------------------------- |
@@ -102,7 +111,9 @@ Form Field: file (Only .txt files allowed)
 | Empty file             | `File is empty or null.`        |
 | Invalid file extension | `Only .txt files are allowed.`  |
 | Internal server error  | `An unexpected error occurred.` |
+---
 
+---
 🧪 Manual Test Cases Covered
 Mixed case handling (Word, word, WORD)
 
@@ -113,8 +124,10 @@ Punctuation and special characters ignored
 Large files tested
 
 Empty file / missing file tested
+---
 
 
+---
 🛠️ Tech Stack
 ASP.NET Core 8 Web API
 
@@ -124,9 +137,12 @@ Regex-based word parsing
 
 Dependency Injection
 
+---
+
+---
 👤 Author
 Ulvi Poladov
 
-
+---
 
 Swagger (OpenAPI)
